@@ -1,0 +1,126 @@
+Create New Screen:
+
+The screen will have a tabbed layout at the top, offering two tabs:
+
+Location Tab
+
+Asset Tab
+
+Responsive Layout: The input fields in the screen must be responsive, adapting well to different screen sizes. Each form input should be presented one per row, and all inputs should be dropdowns.
+
+Only valid list items (from the respective dropdown data sources) should be available for selection.
+
+Tabs Behavior:
+
+Location Tab:
+
+On click of the Location tab, the screen will display input forms related to the location. The inputs will include the necessary details for the location (e.g., Location Name, Location Code, etc.).
+
+
+Asset Tab:
+
+On click of the Asset tab, display input forms for asset details. These inputs will allow the user to define asset-related information (e.g., Asset Name, Asset Code, Installed Time, etc.).
+
+Example asset fields:
+
+Asset Name (Dropdown)
+
+Asset Code (Dropdown)
+
+Installation Time (Date Picker)
+
+Asset Category (Dropdown)
+
+Future Development:
+
+Currently, the Asset Tab will show an under development message when clicked, as this functionality is not yet available.
+
+Input Form Requirements:
+
+Dropdown Inputs:
+
+For each field, use dropdowns populated with valid data from the system (e.g., available locations, asset categories).
+
+The dropdown lists should be dynamically updated if needed, based on context, ensuring that only valid values are shown.
+
+Responsive Layout:
+
+All form fields must adjust to the screen size (especially for mobile devices). On larger screens, the dropdowns can be aligned horizontally or vertically, but on smaller screens, the dropdowns should take full width for better usability.
+
+Actions for Each Tab:
+
+Location Tab:
+
+Submit Location Form: On submitting the location form, the system should update the location wherever it is integrated across the app. This ensures consistency and allows new locations to be used in the asset management system.
+
+The location should be available across different modules/screens in the application once created (e.g., for asset locations).
+
+Asset Tab:
+
+The Asset tab will remain under development, and no input fields or actions will be available. Display a message like:
+
+"Asset creation functionality is under development. Please check back later."
+
+UI Design Guidelines:
+
+Top Tab Navigation:
+
+Display the Location and Asset tabs at the top of the page.
+
+Ensure a smooth transition between the two tabs, clearly indicating which tab is active.
+
+Input Fields:
+
+Use dropdown lists for all inputs.
+
+Ensure that error handling is implemented if invalid data is entered.
+
+Display a clear action button to submit the form (e.g., “Save Location”).
+
+Location Tab:
+
+The Location Tab will contain the necessary dropdown fields for entering location information. After submitting the location, the information should be reflected across all parts of the application that use location data.
+
+Asset Tab (Under Development):
+
+When users click on the Asset Tab, show an under development banner or message.
+
+"Asset creation functionality is under development. Please check back later."
+
+Additional Notes:
+
+Navigation and Submission:
+
+After submitting the Location form, the user should be navigated back to the main Assets screen or any relevant page where the updated data is reflected.
+
+Future Asset Tab Development: The Asset tab will eventually contain input fields for creating asset records (Asset Name, Asset Code, etc.), but this functionality will be added in the future.
+
+Error Handling:
+
+Ensure that appropriate error messages are shown for invalid inputs or missing required fields.
+
+Design Consistency:
+
+Maintain design consistency with other parts of the app (e.g., colors, fonts, button styles).
+
+Input forms should not be pop-up and must only be in screen.
+
+Location Input fields:
+
+1. Location type
+2. Site name / project name
+3. Building name / number
+4. Area/zone
+5. Floor
+6. Room name
+7. Room number
+8. Location - condition
+9. Location - code
+
+ALL ARE DROPDOWN ONLY.. (Develop the necessary backend for this module and seed some sample data here too)
+
+in te bottom navbar i need another nav which navigates to the new screen which shows added locations and added assets live from the database ... user created new location in create new screen should reflect here live
+
+So please develop the necessary backend and seeded sql script.
+
+seeded SQL script should be in seperate sql file so that i can execute without confusion

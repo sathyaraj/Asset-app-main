@@ -1,0 +1,25 @@
+Location : Dropdown (preloaded from the locations module and fetch from DB)
+asset code (manual)
+asset description (manual)
+quantity (numeric)
+asset system (dropdown)
+asset tag (dropdown )
+asset type (dropdown )
+asset name (manual)
+asset group (dropdown)
+asset classification (dropdown)
+condition (dropdown)
+product code (dropdown)
+model type (dropdown)
+manufacturer name (dropdown)
+purchase date(date)
+purchase cost (numeric)
+supplier name (dropdown)
+cost center name (dropdown)
+comments (text area)
+
+all the above should be stored in assets table seperately..
+
+each dropdown must be seeded with data as seperate tables and linked here.
+each dropdown should be seeded with atleast 12 data
+

@@ -1,0 +1,125 @@
+Top Section:
+
+AppBar: Title = "Assets"
+
+Include a real-time search field for filtering assets based on attributes like asset name, asset code, and location. As the user types, the displayed asset list should update accordingly.
+
+Action Row:
+
+➕ Create New (Primary Action Button):
+
+On click: Navigate to a new page (for now, display “Under Development” message as placeholder for future functionality).
+
+⬇ Export CSV (IconButton):
+
+On click: Generate and download a CSV file containing the currently filtered asset data visible on the screen.
+
+The CSV export will:
+
+Only export the visible/filtered data (i.e., matching the search filters).
+
+Use the csv package to generate and save the file.
+
+Allow native sharing options (e.g., share to other apps) and download to device storage.
+
+Asset Display:
+
+Each asset should be displayed in a collapsed/elongated card format:
+
+Collapsed View:
+
+Show the following details:
+
+Asset Name
+
+Asset Code
+
+Location
+
+(Optionally, a small icon or indicator to signify if the card is collapsed or expanded)
+
+Expanded View:
+
+On expand, show the following extended details:
+
+Asset Name
+
+Asset Code
+
+Installed Time
+
+Location
+
+Created Date
+
+Last Updated
+
+This expansion feature keeps the UI clean and only shows full details when needed.
+
+Search Functionality:
+
+The search bar must be functional for real-time filtering, allowing the user to search by:
+
+Asset Name
+
+Asset Code
+
+Location
+
+Or any other related attribute.
+
+The filtered list should be dynamically updated as the user types in the search bar.
+
+Export Functionality:
+
+CSV Export Button:
+
+Export only the currently visible, filtered data (i.e., the assets that match the active search/filter criteria).
+
+Use the csv package to generate the CSV file.
+
+Provide options to either:
+
+Download the CSV file to the device storage, or
+
+Share the file via the device's native share options (e.g., email, other apps).
+
+Navigation:
+
+Bottom Navigation Bar:
+
+The navigation bar should consist of the following screens:
+
+Dashboard (Home screen)
+
+Assets (Current screen)
+
+Users (User management screen)
+
+Settings (Configuration and app settings screen)
+
+Clean Architecture and Separation of Concerns:
+
+The architecture should follow Clean Architecture principles:
+
+UI Layer: Responsible for displaying data and handling user interactions.
+
+Model Layer: Contains data models for the assets, including their attributes (e.g., asset name, code, location, timestamps).
+
+Logic Layer: Manages the business logic, such as handling the search/filter logic, the CSV export functionality, and handling state changes (e.g., toggling card view, managing export).
+
+Ensure separation of concerns to maintain readability and scalability.
+
+Additional Notes:
+
+On clicking Create Asset (the primary button):
+
+Navigate to a Create Asset page.
+
+Display a message: “Under Development” as a placeholder for the feature.
+
+UI Guidelines:
+
+Ensure all cards (collapsed or expanded) are consistent in design and easily distinguishable.
+
+Cards should have a smooth expand/collapse transition.
